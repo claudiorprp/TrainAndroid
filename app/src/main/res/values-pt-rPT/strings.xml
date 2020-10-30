@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Olá Bobi</string>
-    <string name="photo_description">Um Gato Astronauta!</string>
+    <string name="app_name">Olá Gatos</string>
+    <string name="photo_description">Um Gato Astronauta! 🐈</string>
+    <string name="take_photo">Fotografa teu pet</string>
+    <string name="see_more">Ver mais</string>
 </resources>
