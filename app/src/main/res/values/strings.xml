@@ -1,7 +1,11 @@
 <resources>
-    <string name="app_name">Hello Cats</string>
+    <string name="app_name">Cats</string>
     <string name="photo_description">An Astronaut Cat! 🐈</string>
     <string name="animal_name" translatable="false">Whiskers</string>
     <string name="take_photo">Take photo of your Pet</string>
     <string name="see_more">See more</string>
+    <string name="confirmation">Yes</string>
+    <string name="negation">No</string>
+    <string name="intent_confirmation">Are you sure you want to leave?</string>
+    <string name="operation_cancelled">Operation Cancelled</string>
 </resources>

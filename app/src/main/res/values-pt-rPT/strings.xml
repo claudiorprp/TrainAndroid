@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Olá Gatos</string>
+    <string name="app_name">Gatos</string>
     <string name="photo_description">Um Gato Astronauta! 🐈</string>
     <string name="take_photo">Fotografa teu pet</string>
     <string name="see_more">Ver mais</string>
+    <string name="confirmation">Sim</string>
+    <string name="negation">Não</string>
+    <string name="intent_confirmation">Tens a certeza de que queres sair?</string>
+    <string name="operation_cancelled">Operação Cancelada</string>
 </resources>
