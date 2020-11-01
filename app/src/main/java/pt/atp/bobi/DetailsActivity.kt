@@ -4,13 +4,16 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import android.view.View
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 
 class DetailsActivity : AppCompatActivity() {
 
+    private val COUNTDOWN_TIME = 10000L
+
     private lateinit var timer: CountDownTimer
-    private var untilFinished = 10000L
+    private var untilFinished = COUNTDOWN_TIME
     private lateinit var snackBar: Snackbar
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +28,7 @@ class DetailsActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
 
-        startCountDownTimer(untilFinished)
+        startCountDownTimer(COUNTDOWN_TIME)
     }
 
     override fun onPause() {
@@ -43,7 +46,11 @@ class DetailsActivity : AppCompatActivity() {
 
             override fun onFinish() {
                 findViewById<TextView>(R.id.countdown).text = "Done"
-                snackBar.show()
+                snackBar.setAction("Restart") {
+                    startCountDownTimer(COUNTDOWN_TIME)
+                    Toast.makeText(this@DetailsActivity, "Countdown Restarted", Toast.LENGTH_SHORT)
+                            .show()
+                }.show()
             }
 
         }
